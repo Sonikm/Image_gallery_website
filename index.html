@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE GALLERY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f5c8e13b2d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+    <header class="header">
+
+        <!-- NAVBAR -->
+        <nav class="header__nav">
+            <div class="nav__logo">
+                <a href="#">IMAGE GALLERY</a>
+                <i class="fa-solid fa-camera"></i>
+            </div>
+            <div class="nav__links">
+                <ul class="ul_links" id="hide">
+                    <li>HOME</li>
+                    <li>CATEGARIES</li>
+                    <li>BLOGS</li>
+                    <li>CONNECT</li>
+                </ul>
+
+                <div class="search-box">
+                    <input type="text" class="search-text" id="search-text" placeholder="Search images...">
+                    <a href="#" class="search-btn" id="search-btn">
+                        <i class="fa-solid fa-magnifying-glass fa-1x"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="nav__sidebar">
+                <div class="search-box">
+                    <input type="text" class="search-text" placeholder="Search images...">
+                    <a href="#" class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass fa-1x"></i>
+                    </a>
+                </div>
+                <a href="#" class="toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+        </nav>
+
+        <!-- DROPDWON MENU AND SIDE BAR -->
+        <ul class="dropdown__list">
+            <li>HOME</li>
+            <li>CATEGARIES</li>
+            <li>BLOGS</li>
+            <li>CONNECT</li>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </ul>
+    </header>
+
+
+    <section class="slider__section">
+        <div class="image__slider">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=974&q=80" class="slide" alt="image">
+            <img src="https://images.unsplash.com/photo-1540409033374-a47cbbef46d0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" class="slide" alt="image">
+            <img src="https://images.unsplash.com/photo-1454111079122-eb76eb2d5754?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" class="slide" alt="image">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8bGFuZHNjYXBlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" class="slide" alt="image">
+            <img src="https://img.freepik.com/free-photo/light-forest-day-anime-background-illustration-generative-ai_1258-150804.jpg?w=900&t=st=1678562371~exp=1678562971~hmac=c50ecc38ac088fd49dbda6718808a563ee33b0b2cabbaafb504a2291e9bb92c3" class="slide" alt="image">
+            <img src="https://images.pexels.com/photos/1619317/pexels-photo-1619317.jpeg?auto=compress&cs=tinysrgb&w=600" class="slide" alt="image">
+            <img src="https://images.unsplash.com/photo-1538477080496-24fefe5fe161?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="slide" alt="image">
+            <img src="https://images.unsplash.com/photo-1497968021412-a86898ccbc4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" class="slide" alt="image">
+            <img src="https://images.unsplash.com/photo-1470214203634-e436a8848e23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1933&q=80" class="slide" alt="image">
+        </div>
+        <div class="title">
+            <h1>TRENDING IMAGES</h1>
+            <i class="fa-solid fa-water"></i>
+            <span>Trending: flower, wallpapers, backgrounds, happy, nature...</span>
+        </div>
+
+        <div class="prev-btn btn" onclick="goPrev()">
+            <span> PREV </span>
+        </div>
+        <div class="next-btn btn" onclick="goNext()">
+            <span> NEXT </span>
+        </div>
+    </section>
+
+    <!-- IMAGE CATEGARIES SECTION -->
+    <section class="categaries-section">
+
+        <div class="type-header">
+            <div class="tranding">
+                <h2>EXPLORE IMAGES</h2>
+            </div>
+            <ul class="link">
+                <li>NATURE</li>
+                <li>FOOD</li>
+                <li>ANIMALS</li>
+                <li>TRAVELING</li>
+                <li>PEOPLES</li>
+                <li>FASHION</li>
+                <li>TREES</li>
+                <li>MAOUNTAINS</li>
+                <li>HOUSE</li>
+                <li>COLORS</li>
+                <li>VINTAGE</li>
+                <li>FISTIVALS</li>
+                <li>COUNTRIES</li>
+                <li>LANDSCAPE</li>
+                <li>FOREST</li>
+                <li>SKY</li>
+            </ul>
+        </div>
+
+        <div class="image-types">
+            
+            <a href="Image_websites/animals.html" target="_self" class="image" style="background-image: url(https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80);" width="100%">
+                <span>10 photos</span><br>ANIMALS
+            </a>
+            <a href="Image_websites/house.html" target="_self" class="image" style="background-image: url(https://images.pexels.com/photos/1170686/pexels-photo-1170686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);" width="100%">
+                <span>10 photos</span><br>HOUSE
+            </a>
+            <a href="Image_websites/colors.html" target="_self" class="image" style="background-image: url(https://img.freepik.com/free-photo/color-text-with-different-types-holi-color-powder-bowl-black-background_23-2147949030.jpg?w=900&t=st=1678560676~exp=1678561276~hmac=0c226561135e99bab3212e821737d64d39dd2837d04a7d14a0eabc3622d4c22f);" width="100%">
+                <span>10 photos</span><br>COLORS
+            </a>
+            <a href="Image_websites/food.html" target="_self" class="image" style="background-image: url(https://images.pexels.com/photos/2641886/pexels-photo-2641886.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);" width="100%">
+                <span>10 photos</span><br>FOOD
+            </a>
+            <a href="Image_websites/model.html" target="_self" class="image" style="background-image: url(https://img.freepik.com/free-photo/portrait-pretty-lady-red-warm-jacket-stylish-eyeglasses_197531-15046.jpg?w=900&t=st=1678562226~exp=1678562826~hmac=6d41a595082394c390ded58dbda5c2c068733bbea345dab005c64c2fca0a5358);" width="100%">
+                <span>10 photos</span><br>MODELS
+            </a>
+            <a href="Image_websites/flower.html" target="_self" class="image" style="background-image: url(https://images.unsplash.com/photo-1455659817273-f96807779a8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);" width="100%">
+                <span>10 photos</span><br>FLOWERS
+            </a>
+            <a href="Image_websites/nature.html" target="_self" class="image" style="background-image: url(https://images.pexels.com/photos/8797307/pexels-photo-8797307.jpeg?auto=compress&cs=tinysrgb&w=600);" width="100%">
+                <span>10 photos</span><br>NATURE
+            </a>
+            <a href="Image_websites/vintage.html" target="_self" class="image" style="background-image: url(https://images.pexels.com/photos/991678/pexels-photo-991678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);" width="100%">
+                <span>10 photos</span><br>VINTAGE
+            </a>
+            <a href="Image_websites/people.html" target="_self" class="image" style="background-image: url(https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80);" width="100%">
+                <span>10 photos</span><br>PEOPLES
+            </a>
+            <a href="Image_websites/fastivals.html" target="_self" class="image" style="background-image: url(https://images.pexels.com/photos/1162983/pexels-photo-1162983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);" width="100%">
+                <span>10 photos</span><br>FASTIVALS
+            </a>
+            <a href="Image_websites/conifer.html" target="_self" class="image" style="background-image: url(https://images.unsplash.com/photo-1575391169188-099b01276070?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);" width="100%">
+                <span>10 photos</span><br>CONIFER
+            </a>
+            <a href="Image_websites/workspace.html" target="_self" class="image" style="background-image: url(https://images.pexels.com/photos/163185/old-retro-antique-vintage-163185.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);" width="100%">
+                <span>10 photos</span><br>WORKSPACE
+            </a>
+        </div>
+
+        <!-- THIS WILL SHOW WHEN BUTTON IS CLICKED -->
+        <div class="hide" id="more-images">
+            <a href="Image_websites/childrens.html" target="_self" class="image" style="background-image: url(https://images.pexels.com/photos/754769/pexels-photo-754769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);" width="100%">
+                <span>10 photos</span><br>CHILDREN
+            </a>
+            <a href="Image_websites/travelings.html" target="_self" class="image" style="background-image: url(https://images.pexels.com/photos/2577274/pexels-photo-2577274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);" width="100%">
+                <span>10 photos</span><br>TRAVELING
+            </a>
+            <a href="Image_websites/vehicles.html" target="_self" class="image" style="background-image: url(https://images.pexels.com/photos/1210622/pexels-photo-1210622.jpeg);" width="100%">
+                <span>10 photos</span><br>VEHICLES
+            </a>
+            <a href="Image_websites/mountains.html" target="_self" class="image" style="background-image: url(https://img.freepik.com/free-photo/beautiful-view-mountains-covered-snow-annapurna-conservation-area-chhusang-nepal_181624-15705.jpg?w=1060&t=st=1678560738~exp=1678561338~hmac=80f6b497e7fa70a30faae4b22f59fe736ff133090380393ed26bb738c7ae4946);" width="100%">
+                <span>10 photos</span><br>MOUNTAINS
+            </a>
+            <a href="Image_websites/trees.html" target="_self" class="image" style="background-image: url(https://images.pexels.com/photos/788200/pexels-photo-788200.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);" width="100%">
+                <span>10 photos</span><br>TREES
+            </a>
+            <a href="Image_websites/fastion.html" target="_self" class="image" style="background-image: url(https://images.pexels.com/photos/1116308/pexels-photo-1116308.jpeg);" width="100%">
+                <span>10 photos</span><br>FASHION & BEAUTY
+            </a>
+        </div>
+
+        <div class="img__more_btn">
+            <button class="more-btn" onclick="showMore()">SHOW MORE</button>
+        </div>
+
+    </section>
+
+    <section class="advertisement-section">
+        <div class="advertise-title">
+            ADVERTISEMENT
+        </div>
+        <div class="advertise-images">
+            <div class="bottom-img" style="background-image: url(https://images.unsplash.com/photo-1675798565910-61feb156f059?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80);">
+                Wallpapers <span> <br>From epic drone shots to inspiring moments in nature — submit your best desktop and mobile backgrounds.</span>
+            </div>
+            <div class="bottom-img" style="background-image: url(https://images.unsplash.com/photo-1678213430955-a0c307a34b7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80);">
+                Film <span> <br>Let’s honor the beginnings of photography by celebrating analog from the past and present day.</span>
+            </div>
+            <div class="bottom-img" style="background-image: url(https://images.unsplash.com/photo-1676057873274-4db1b58d7f5e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDUwfGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);">
+                Street Photography <span> <br>When the streets around you become your canvas, what can you discover?</span>
+            </div>
+            <div class="bottom-img" style="background-image: url(https://images.unsplash.com/photo-1676674603473-28fb7bc32c19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMyfGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);">
+                Spirituality <span> <br>Photography has the ability to examine life’s big questions, by exploring themes of love, loss, healing and human connection.</span>
+            </div>
+            <div class="bottom-img" style="background-image: url(https://images.unsplash.com/photo-1675722275713-42e6ff27be34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDU2fGJEbzQ4Y1Vod25ZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60);">
+                Architecture & Interiors <span> <br>Exploring our built environments — from brutalist buildings to eccentric home decor.</span>
+            </div>
+            <div class="bottom-img" style="background-image: url(https://images.unsplash.com/photo-1678156704472-4fd68f7fdfd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80);">
+                Textures & Patterns <span> <br>Whether you’re looking for stunning macro-photography of complex architectural shapes — you’ve come to the right place.
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-section">
+        <div class="social-icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+            <i class="fa-brands fa-pinterest"></i>
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
